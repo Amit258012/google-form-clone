@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Google Form Clone</title>
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/form.css" />
+		<script defer src="/script.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<a href="#">
+				<img class="logo" alt="logo" src="./assets/logo_forms.png" />
+			</a>
+
+			<nav class="main-nav">
+				<ul class="main-nav-list">
+					<li>
+						<a class="main-nav-link" href="#">Home</a>
+					</li>
+					<li>
+						<a class="main-nav-link" href="/html/orders.html"
+							>MyForms</a
+						>
+					</li>
+					<li>
+						<a class="show-modal">Sign Up</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="modal hidden">
+			<button class="close-modal">&times;</button>
+			<h2>Register With Us</h2>
+			<div class="container">
+				<form id="form" class="form">
+					<div class="form-control">
+						<label for="username">Username</label>
+						<input
+							type="text"
+							id="username"
+							placeholder="Enter Username"
+							novalidate />
+						<small>Error Message</small>
+					</div>
+					<div class="form-control">
+						<label for="password">Password</label>
+						<input
+							type="password"
+							id="password"
+							placeholder="Enter password"
+							novalidate />
+						<small>Error Message</small>
+					</div>
+
+					<button>Submit</button>
+					<div class="signin">
+						<span>Do you have account ?</span>
+						<a href="/pages/login/login.html">Login</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="overlay hidden"></div>
+		<main>
+			<section class="section-hero">
+				<div class="hero">
+					<div class="hero-text-box">
+						<h1 class="heading-primary">
+							StreamlinedSurvey: Gather Insights with Ease
+						</h1>
+						<p class="hero-description">
+							Simplify the data collection process with
+							StreamlinedSurvey, your go-to platform for creating
+							and sharing surveys. Whether it's for feedback,
+							research, or opinions, our user-friendly interface
+							empowers you to design customized forms in minutes.
+							Collect and analyze responses effortlessly to make
+							informed decisions.
+						</p>
+						<a class="btn btn--full show-modal"
+							>Get Started for Free</a
+						>
+					</div>
+					<div class="hero-img-box">
+						<img
+							src="../img/game-moniter.jpg"
+							class="hero-img"
+							alt="hero-img" />
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
